@@ -2,9 +2,9 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
   //...
 
-  // nitro: {
-  //   preset: 'github-pages',
-  // },
+  nitro: {
+    preset: 'github-pages',
+  },
   
   app: {
     baseURL: '/payme', 
