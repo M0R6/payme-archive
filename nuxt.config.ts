@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   // },
   
   app: {
-    baseURL: '/', 
+    baseURL: '/payme', 
   },
 
   build: {
