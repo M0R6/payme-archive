@@ -1,14 +1,22 @@
-
-// import this after install `@mdi/font` package
 import '@mdi/font/css/materialdesignicons.css'
-
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
-    // ... your configuration
+    theme: {
+      defaultTheme: 'light',
+      themes: {
+        light: {
+          colors: {
+            primary: '#334155',
+          },
+        },
+      },
+    },
+    defaults: {
+      VBtn: { style: 'text-transform: none; font-weight: 600;' },
+    },
   })
   app.vueApp.use(vuetify)
 })
-
